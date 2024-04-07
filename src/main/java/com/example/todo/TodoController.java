@@ -44,4 +44,9 @@ public class TodoController {
         repository.save(todo);
         return "redirect:/";
     }
+
+    @ResponseStatus(HttpStatus.NO_CONTENT)
+    @ResponseBody
+    @RequestMapping("/health")
+    public void health() {}
 }
