@@ -50,6 +50,6 @@ public class TodoController {
 
     @ResponseStatus(HttpStatus.NO_CONTENT)
     @ResponseBody
-    @RequestMapping("/health")
+    @GetMapping("/health")
     public void health() {}
 }
